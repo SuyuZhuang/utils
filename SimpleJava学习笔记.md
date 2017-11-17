@@ -1,6 +1,6 @@
 # Simple Java 学习笔记
 
-## 1. Simples And Arrays
+## 1. String And Arrays
 ### Java String's immutability
 `String s = "abcd"` 声明时，s指向堆内存中的"abcd"，并且一旦产生就不能被改变。所有String的方法都没有改变本身，而是新new了一个String对象。
 
@@ -21,3 +21,13 @@ jdk6和jdk7中的工作方式不一样。首先，string背后其实是由`char[
 - using Set
 - using Loop
 - using Array.binarySearch(只能被用于已经排好序的数组中)
+
+## 2. 常用的方法
+### comparable vs. comparator
+- comparable 是一个接口，需要实体类去实现接口，同时实现compareTo()方法
+- comparator 需要写一个比较器，然后使用Collection.sort() 或者 Array.sort()等
+
+### pass-by-value 按值传递
+
+## 3. 类与接口
+### Overriding重写 vs. Overloading重载
